@@ -10,7 +10,7 @@ import Image from "next/image";
 
 import background from "./background.jpg";
 import React from "react";
-// import AnimatedContent from "./AnimatedContent";
+import AnimatedContent from "./AnimatedContent";
 
 /**
  * Props for `Integrations`.
@@ -45,7 +45,7 @@ const Integrations = ({ slice }: IntegrationsProps): JSX.Element => {
           <PrismicRichText field={slice.primary.body} />
         </div>
 
-        {/* <AnimatedContent slice={slice} /> */}
+        <AnimatedContent slice={slice} />
       </div>
     </Bounded>
   );
