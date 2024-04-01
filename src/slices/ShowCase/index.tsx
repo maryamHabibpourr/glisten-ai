@@ -7,6 +7,7 @@ import clsx from "clsx";
 import { PiArrowsClockwise, PiGear } from "react-icons/pi";
 import AnimatedContent from "./AnimatedContent";
 
+
 const icons = {
   gear: <PiGear />,
   cycle: <PiArrowsClockwise />,
@@ -15,7 +16,7 @@ const icons = {
 /**
  * Props for `Showcase`.
  */
-export type ShowcaseProps = SliceComponentProps<Content.ShowcaseSlice>;
+export type ShowcaseProps = SliceComponentProps<Content.ShowCaseSlice>;
 
 /**
  * Component for "Showcase" Slices.
@@ -44,7 +45,7 @@ const Showcase = ({ slice }: ShowcaseProps): JSX.Element => {
       <div className="mt-16 grid items-center gap-8 rounded-xl border border-blue-50/20 bg-gradient-to-b from-slate-50/15 to-slate-50/5 px-8 py-8 backdrop-blur-sm lg:grid-cols-3 lg:gap-0 lg:py-12">
         <div>
           <div className="w-fit rounded-lg bg-blue-500/35 p-4 text-3xl">
-            <>{slice.primary.icon && icons[slice.primary.icon]}</>
+            {/* <>{slice.primary.icon && icons[slice.primary.icon]}</> */}
           </div>
           <div className="mt-6 text-2xl font-normal">
             <PrismicRichText field={slice.primary.subheading} />
